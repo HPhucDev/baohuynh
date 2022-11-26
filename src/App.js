@@ -469,8 +469,8 @@ function App() {
                       </CardActions>
                     </Card>
                   </Grid>
-                  <Grid item xs={8}>
-                    <Card sx={{ width: "100%" }}>
+                  <Grid item xs={7}>
+                    <Card sx={{ width: "80%" }}>
                       <CardActionArea>
                         <CardMedia
                           component="img"
@@ -486,11 +486,11 @@ function App() {
               <TabPanel value={value} index={3}>
                 <Grid container justifyContent={"space-between"}>
                   <Grid item xs={8}>
-                    <Card sx={{ width: "55%" }}>
+                    <Card sx={{ width: "50%", padding: 0 }}>
                       <CardActionArea>
                         <CardMedia
                           component="img"
-                          height="100%"
+                          height="70%"
                           image={require("./images/File4.jpg")}
                           alt="File1"
                         />
@@ -569,7 +569,7 @@ function App() {
               <TabPanel value={value} index={4}>
                 <Grid container justifyContent={"space-between"}>
                   <Grid item xs={8}>
-                    <Card sx={{ width: "100%" }}>
+                    <Card sx={{ width: "80%" }}>
                       <CardActionArea>
                         <CardMedia
                           component="img"
@@ -652,7 +652,7 @@ function App() {
               <TabPanel value={value} index={5}>
                 <Grid container justifyContent={"space-between"}>
                   <Grid item xs={8}>
-                    <Card sx={{ width: "100%" }}>
+                    <Card sx={{ width: "80%" }}>
                       <CardActionArea>
                         <CardMedia
                           component="img"
@@ -735,7 +735,7 @@ function App() {
               <TabPanel value={value} index={6}>
                 <Grid container justifyContent={"space-between"}>
                   <Grid item xs={6}>
-                    <Card sx={{ width: "100%" }}>
+                    <Card sx={{ width: "90%" }}>
                       <CardActionArea>
                         <CardMedia
                           component="img"
@@ -824,8 +824,13 @@ function App() {
               </Grid>
             </div>
           )}
-          <div style={{ height: "80px" }}>
-            <Player url={require("./images/music.mp3")} />
+          <div >
+            <AudioPlayer
+              autoPlay={true}
+              loop={true}
+              src={require("./images/music.mp3")}
+              onPlay={(e) => console.log("onPlay")}
+            />
           </div>
         </Container>
       </div>
