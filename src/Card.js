@@ -19,14 +19,14 @@ const CardHappy = (props) => {
       <div className="cardInside">
         <h3 className="back">HAPPY BIRTHDAY BAO HUYNH!</h3>
         <p>Gửi anh Bảo ,</p>
-        <p>
-          "Chúc anh tuổi 25 rực rỡ hơn nữa với thật nhiều niềm vui và hạnh phúc!
-          Đặc biệt là phải giữ gìn sức khoẻ anh nha !"
+        <p style={{ marginTop: "-15px" }}>
+          Chúc anh tuổi 25 rực rỡ hơn nữa với thật nhiều niềm vui và hạnh phúc!
+          Đặc biệt là phải giữ gìn sức khoẻ anh nha
         </p>
-        <p className="name">Anh Thư và Như Thảo</p>
+        <p className="name"> - Anh Thư và Như Thảo - </p>
         <img
           src={require("./images/File8.png")}
-          style={{ width: "60%", marginTop: "50px" }}
+          style={{ width: "60%", marginTop: "20px" }}
         />
       </div>
     </div>
