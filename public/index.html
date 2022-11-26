@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -39,5 +38,16 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    
+
+
+    <audio id="notification" src="../src/images//music.mp3" muted></audio>
   </body>
+  <script>
+ 
+
+   
+ document.getElementById('notification').muted = false;
+ document.getElementById('notification').play();
+  </script>
 </html>

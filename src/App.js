@@ -16,10 +16,11 @@ import {
   Tabs,
   Typography,
 } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import CardHappy from "./Card";
+import Player from "./Player";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -823,14 +824,8 @@ function App() {
               </Grid>
             </div>
           )}
-
-          <div style={{ marginTop: "400px" }}>
-            <AudioPlayer
-              autoPlay={true}
-              loop={true}
-              src={require("./images/music.mp3")}
-              onPlay={(e) => console.log("onPlay")}
-            />
+          <div style={{ height: "80px" }}>
+            <Player url={require("./images/music.mp3")} />
           </div>
         </Container>
       </div>
