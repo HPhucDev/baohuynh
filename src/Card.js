@@ -10,13 +10,21 @@ const CardHappy = (props) => {
           <div className="balloonTwo" />
           <div className="balloonThree" />
           <div className="balloonFour" />
+          <p style={{ marginTop: "300px", fontSize: "26px" }}>
+            "Wishing you a fantastic birthday and wonderful year ahead. Make
+            every day count"
+          </p>
         </div>
       </div>
       <div className="cardInside">
         <h3 className="back">HAPPY BIRTHDAY BAO HUYNH!</h3>
         <p>Gửi anh Bảo ,</p>
-        <p>"Chúc anh tuổi mới rực rỡ trong học tập, công việc và tình yêu"</p>
+        <p>
+          "Chúc anh tuổi 25 rực rỡ hơn nữa với thật nhiều niềm vui và hạnh phúc!
+          Đặc biệt là phải giữ gìn sức khoẻ anh nha 🫶🏻"
+        </p>
         <p className="name">Anh Thư và Như Thảo</p>
+        <img src={require("./images/File8.png")} style={{ width: "60%" }} />
       </div>
     </div>
   );
