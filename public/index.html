@@ -39,15 +39,21 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     
-
-
-    <audio id="notification" src="../src/images//music.mp3" muted></audio>
+    <!-- <audio class="song" controls loop>
+      <source src="music.mp3"></source>
+   Your browser isn't invited for super fun audio time.
+  </audio>
+     -->
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script>
- 
+// $("document").ready(function () {
 
+//   $("#play").click(function () {
+//     var audio = $(".song")[0];
+//     audio.play();
    
- document.getElementById('notification').muted = false;
- document.getElementById('notification').play();
+//   });
+// });
   </script>
 </html>

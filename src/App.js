@@ -240,7 +240,7 @@ function App() {
                       <CardActionArea>
                         <CardMedia
                           component="img"
-                          height="80%"
+                          height="70%"
                           image={require("./images/File1.jpg")}
                           alt="File1"
                         />
@@ -323,7 +323,7 @@ function App() {
                       <CardActionArea>
                         <CardMedia
                           component="img"
-                          height="80%"
+                          height="70%"
                           image={require("./images/File2.jpg")}
                           alt="File1"
                         />
@@ -490,7 +490,7 @@ function App() {
                       <CardActionArea>
                         <CardMedia
                           component="img"
-                          height="70%"
+                          height="65%"
                           image={require("./images/File4.jpg")}
                           alt="File1"
                         />
@@ -824,7 +824,7 @@ function App() {
               </Grid>
             </div>
           )}
-          <div >
+          <div style={{marginTop:"50px"}}>
             <AudioPlayer
               autoPlay={true}
               loop={true}

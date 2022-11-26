@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-
+import sound from "./images/music.mp3";
 const useAudio = (url) => {
-  const [audio] = useState(new Audio(url));
+  const [audio] = useState(new Audio(sound));
   const [playing, setPlaying] = useState(true);
 
   const toggle = () => setPlaying(!playing);
@@ -9,13 +9,6 @@ const useAudio = (url) => {
   useEffect(() => {
     playing ? audio.play() : audio.pause();
   }, [playing]);
-
-  useEffect(() => {
-    audio.addEventListener("ended", () => setPlaying(false));
-    return () => {
-      audio.removeEventListener("ended", () => setPlaying(false));
-    };
-  }, []);
 
   return [playing, toggle];
 };
